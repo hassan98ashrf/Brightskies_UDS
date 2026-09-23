@@ -14,17 +14,17 @@ Since CAN bus frames are typically limited to 8 bytes, the **CAN-TP** layer acts
 
 ## 🎯 Tested Scenarios
 To ensure maximum reliability, the reception logic (CAN-TP Rx) was subjected to rigorous testing covering both normal operations and edge cases. Based on our test plan, the scenarios include:
-* **Basic Reception:** Verifying the successful reception and storage of a single valid CAN frame[cite: 6].
-* **Consecutive Frames & Split Data:** Testing the reception and successful reassembly of multi-frame messages split across several CAN frames[cite: 6].
-* **Boundary & Edge Cases:** Handling the maximum allowed frame size (payload limit) and zero-length/minimum non-zero length frames[cite: 6].
-* **Error & Interruption Handling:** Validating the system's response to interrupted transmissions, concurrent receptions, and invalid frame formats (e.g., invalid DLC)[cite: 6].
-* **Robustness & Validation:** Simulating buffer overflows, delayed frames (timeout handling), invalid CAN IDs, and corrupted CRC values to ensure the system returns the appropriate error codes without failing[cite: 6].
+* **Basic Reception:** Verifying the successful reception and storage of a single valid CAN frame.
+* **Consecutive Frames & Split Data:** Testing the reception and successful reassembly of multi-frame messages split across several CAN frames.
+* **Boundary & Edge Cases:** Handling the maximum allowed frame size (payload limit) and zero-length/minimum non-zero length frames.
+* **Error & Interruption Handling:** Validating the system's response to interrupted transmissions, concurrent receptions, and invalid frame formats (e.g., invalid DLC).
+* **Robustness & Validation:** Simulating buffer overflows, delayed frames (timeout handling), invalid CAN IDs, and corrupted CRC values to ensure the system returns the appropriate error codes without failing.
 
 ---
 
 ## 🛠️ Tools Used
 * **Google Test (GTest):** A popular C++ testing framework developed by Google. It was used because it facilitates writing and running tests with simple syntax and a rich set of assertions to check values.
-* **LCOV (Coverage Tool):** A tool for code coverage analysis that helps developers understand exactly how much of their code is executed during testing[cite: 7]. It ensures thorough testing, improves code reliability, and generates detailed graphical coverage reports[cite: 7].
+* **LCOV (Coverage Tool):** A tool for code coverage analysis that helps developers understand exactly how much of their code is executed during testing. It ensures thorough testing, improves code reliability, and generates detailed graphical coverage reports.
 
 ---
 
@@ -36,10 +36,10 @@ To ensure maximum reliability, the reception logic (CAN-TP Rx) was subjected to 
 
 ### 2. Code Coverage Generation on Windows (Linux Simulation)
 * **The Challenge:** Generating graphical code coverage reports utilizing `LCOV` and `gcov` is natively supported on Linux architectures. Running these tools directly on a standard Windows development environment presents compatibility issues.
-* **The Solution:** We configured a Linux simulation environment on Windows (using Windows Subsystem for Linux - WSL)[cite: 7]. This allowed us to compile the binaries using `g++` with coverage flags (`--coverage` / `-fprofile-arcs -ftest-coverage`) and utilize Linux-native tools to parse the `.info` files and generate the final HTML coverage reports directly from the Windows directory path (`/mnt/g/...`)[cite: 7].
+* **The Solution:** We configured a Linux simulation environment on Windows (using Windows Subsystem for Linux - WSL)[cite: 7]. This allowed us to compile the binaries using `g++` with coverage flags (`--coverage` / `-fprofile-arcs -ftest-coverage`) and utilize Linux-native tools to parse the `.info` files and generate the final HTML coverage reports directly from the Windows directory path (`/mnt/g/...`).
 
 ---
 
 ## 📊 Code Coverage Reports
-The integration of LCOV successfully identified tested and untested parts of the codebase[cite: 7].
+The integration of LCOV successfully identified tested and untested parts of the codebase.
 *(Check the `images/` folder for full LCOV graphical reports showing Line Coverage and Functions Coverage).*
