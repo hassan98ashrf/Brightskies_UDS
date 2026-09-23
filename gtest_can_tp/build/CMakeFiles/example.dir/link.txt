@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libexample.a CMakeFiles/example.dir/src/CanTP.c.obj
+C:\mingw64\bin\ranlib.exe libexample.a

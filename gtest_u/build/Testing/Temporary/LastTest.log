@@ -1,0 +1,41 @@
+Start testing: Aug 27 20:34 Egypt Daylight Time
+----------------------------------------------------------
+1/1 Testing: example_test
+1/1 Test: example_test
+Command: "G:/Brightskies project/gtest_u/build/test_example.exe"
+Directory: G:/Brightskies project/gtest_u/build
+"example_test" start time: Aug 27 20:34 Egypt Daylight Time
+Output:
+----------------------------------------------------------
+Running main() from G:\Brightskies project\gtest_u\googletest\googletest\src\gtest_main.cc
+[==========] Running 7 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 7 tests from UDS_UnitTest
+[ RUN      ] UDS_UnitTest.server_call_back_ControlSer_DefaultSess
+[       OK ] UDS_UnitTest.server_call_back_ControlSer_DefaultSess (0 ms)
+[ RUN      ] UDS_UnitTest.server_call_back_ControlSer_ExtendedSess
+[       OK ] UDS_UnitTest.server_call_back_ControlSer_ExtendedSess (0 ms)
+[ RUN      ] UDS_UnitTest.server_call_back_Read_Service_1
+[       OK ] UDS_UnitTest.server_call_back_Read_Service_1 (0 ms)
+[ RUN      ] UDS_UnitTest.server_call_back_Write_Service_1
+[       OK ] UDS_UnitTest.server_call_back_Write_Service_1 (0 ms)
+[ RUN      ] UDS_UnitTest.server_call_back_Write_Service_2
+[       OK ] UDS_UnitTest.server_call_back_Write_Service_2 (0 ms)
+[ RUN      ] UDS_UnitTest.server_call_back_Read_Service_2
+[       OK ] UDS_UnitTest.server_call_back_Read_Service_2 (0 ms)
+[ RUN      ] UDS_UnitTest.server_call_back_Tester_Present_Service
+[       OK ] UDS_UnitTest.server_call_back_Tester_Present_Service (0 ms)
+[----------] 7 tests from UDS_UnitTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 7 tests.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"example_test" end time: Aug 27 20:34 Egypt Daylight Time
+"example_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 27 20:34 Egypt Daylight Time
